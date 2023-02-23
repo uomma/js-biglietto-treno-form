@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,74 @@
     <title>js-biglietto-treno-form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <header>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+    </header>
+    <main>
+<!-- /* primo blocco */ -->
+        <div class="container">
+            <ul class="domande">
+                <li>
+                    <div class="specifics ">Nome e Cognome</div>
+                    <input type="text" id="userName" placeholder="inserisci nome e cognome">
+                </li>
+                <li>
+                    <div class="specifics">KM da percorrere</div>
+                    <input type="text"  id="KMtratta" placeholder="inserisci KM tratta">
+                    
+                </li>
+                <li>
+                    <div class="specifics">Fasscia d'età</div>
+
+                    <select class="form-select " aria-label="Default select example">
+                        <option selected>Maggiorenne</option>
+                        <option value="1">Minorenne</option>
+                        <option value="2">Over 65</option>
+                      </select> 
+                </li>
+
+            </ul>
+<!-- /* tasti */ -->
+            <div class="tasti">
+                <button class="genera" onclick="display()">genera</button>
+                
+                <button class="annulla" type="reset" value="reset"> annulla</button>
+            </div>
+
+        </div>
+
+<!-- secondo blocco -->
+
+<div class="container  su">
+    <h1>IL TUO BIGLIETTO</h1>
+    <div>DETTAGLIO PASSEGGERO</div>
+    <div >
+        <ul class="domande">
+            <li class="name">nome PASSEGGERO
+                <p id="nome"></p>
+            </li>
+            <!-- 
+            <li>carrozza</li>
+            <li>vagone</li> -->
+            <li>costo BIGLIETTO
+                <p id="costo"></p>
+
+            </li>
+        </ul>
+    </div>
+    <div class="costo">OOOOOOOOO</div>
+
+</div>
+
+
+		 
+
+       
+    </main>
     <script src="main.js"></script>
 </body>
+
 </html>
